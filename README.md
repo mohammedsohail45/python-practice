@@ -1,73 +1,62 @@
-My first project on GitHub
-# Backend API Project – Internship Assignment
+# Backend API Assignment – Python (FastAPI + SQLite)
 
-This project is a backend API developed using **FastAPI**, designed during internship as part of a practical assignment. It supports user management and personal information storage with proper routing, models, and database integration.
+This project is a backend API system built using **Python** with **FastAPI**, and uses **SQLite** as the database. It was created as part of an internship assignment to implement CRUD operations for user and personal information.
 
----
+## 🔧 Technologies Used
 
-## 🚀 Tech Stack
+- Python 3
+- FastAPI
+- SQLite
+- Pydantic
+- Uvicorn (for running the server)
 
-- **Python 3.11+**
-- **FastAPI**
-- **SQLAlchemy**
-- **SQLite** (or other DB via `.env`)
-- **Pydantic**
-- **Uvicorn**
-- **Postman** (for API testing)
+## 📁 Project Structure
 
----
+📦 python-practice/
+├── main.py # Entry point to run the app
+├── database.py # DB connection and setup
+├── user.py # User model/schema
+├── user_crud.py # User CRUD operations
+├── personal_info.py # Personal info model/schema
+├── personal_info_crud.py # Personal info CRUD operations
+├── init.py
+└── README.md
 
-## 📁 Folder Structure
-app/
-├── crud/ # Database operation functions
-├── models/ # SQLAlchemy DB models
-├── routers/ # Route handlers (API endpoints)
-├── schemas/ # Pydantic validation models
-├── database.py # DB connection logic
-├── main.py # FastAPI entry point
+markdown
+Copy
+Edit
 
+## 🚀 How to Run
 
----
+1. **Install dependencies**:
+   ```bash
+   pip install fastapi uvicorn
+Run the app:
 
-## 🔐 .env (Environment File)
+bash
+Copy
+Edit
+uvicorn main:app --reload
+API Docs available at:
 
-DATABASE_URL=sqlite:///./test.db
-SECRET_KEY=your_secret_key_here
+Swagger UI: http://127.0.0.1:8000/docs
 
+ReDoc: http://127.0.0.1:8000/redoc
 
-## 📦 Installation & Run
+📌 Features
+Add new user
 
-```bash
-# Clone repo
-git clone https://github.com/yourusername/yourrepo.git
+View user list
 
-# Navigate
-cd mohammed_sohail_api_assignment
+Update/delete user
 
-# Create virtual environment (optional)
-python -m venv venv
-source venv/bin/activate  # for Linux/Mac
-venv\Scripts\activate     # for Windows
+Add and manage personal info
 
-# Install dependencies
-pip install -r requirements.txt
+Modular file structure
 
-# Run the app
-uvicorn app.main:app --reload
-
-🔌 API Endpoints (Examples)
-Method	Endpoint	Description
-POST	/register	Register new user
-POST	/login	Login user
-GET	/personal_info/{id}	Get personal info by ID
-POST	/personal_info/	Add personal info
-
-Test API using Postman
-Use mohammed_sohail_postman_collection.json for ready API tests.
-
-🙋‍♂️ Author
+📬 Contact
 Mohammed Sohail
-BCA Graduate | FastAPI, Python, HTML, PHP Developer
+https://github.com/mohammedsohail45
 
-
-
+Copy
+Edit
