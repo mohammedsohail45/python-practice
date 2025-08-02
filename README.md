@@ -55,8 +55,6 @@ Add and manage personal info
 Modular file structure
 
 📬 Contact
-Mohammed Sohail
+Mohammed Sohail.
 https://github.com/mohammedsohail45
 
-Copy
-Edit
